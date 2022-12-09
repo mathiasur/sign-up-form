@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SignUp Form</title>
+</head>
+
+<body>
+
+    <figure class="img-container">
+
+        <div class="logo-container">
+
+            <object data="./first-order.svg" width="120" height="120" id="logo"> </object>
+
+            <h1>The Order</h1>
+
+        </div>
+
+    </figure>
+
+    <main class="main-container">
+
+        <div class="quote">
+
+            <quote>
+                "With the Force as my guide, death would not be the final word in my story. But my fall <br>
+                would signal a necessary end to the Galactic Empire. If the vast and powerful forces <br>
+                I had amassed could not perform their sworn duty and protect their own Emperor, <br>
+                they did not deserve to lay claim to this galaxy in my absence. <br>
+                For their failures, I would see them burn. 
+                And the galaxy along with them."
+                <br>
+                <br>
+                <span id="author">-Darth Sidious</span>
+            </quote>
+
+        </div>
+
+        <form>
+
+            <div class="user-inputs">
+                
+                <h2>Join to us!</h2>
+
+                <div class="fieldsets">
+                    <fieldset>
+                        <div class="user-name">
+                            <label for="first_name"> FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+                        <div class="user-last">
+                            <label for="first_name">LAST NAME</label>
+                            <input type="text" id="first_name" name="last_name">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="user-email">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="user-phone">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="number" id="phone" name="phone_number">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="user-pw">
+                            <label for="password">PASSWORD</label>
+                            <input type="text" id="password" name="password" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="user-confirm">
+                            <label for="confirmPw">CONFIRM PASSWORD</label>
+                            <input type="text" id="confirmPw" name="confirmPw" required>
+                        </div>
+                    </fieldset>
+                </div>
+
+                
+            </div>
+
+            <input type="submit" value="Create Account" id="submitBtn">
+
+        </form>
+
+        <span id="login">Already have an account? <a href="#">Log in</a></span>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
